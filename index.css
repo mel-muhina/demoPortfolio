@@ -1,0 +1,218 @@
+* {
+ color: aliceblue;
+ 
+}
+
+
+body {
+ background-color: hsl(240, 100%, 10%);
+ margin: 0 auto;
+ font-family: 'Nunito Sans';
+ font-size: 16px;
+ 
+ 
+} 
+
+
+
+/* Navigation Bar */
+
+.nav {
+    text-align: right; 
+    
+}
+
+.nav ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav li{
+   display: inline;
+   
+   }
+
+   .nav a {
+    color: ##1a19ff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 25px;
+    padding: 10px 20px;
+    border-bottom: 2px solid #FFF5EE;
+  }
+
+  .nav a:hover {
+    background-color: hsl(240, 60%, 50%);
+    border-bottom: 2px solid #6495ed;
+   }
+
+.nav a:active {
+    background-color: hsl(270, 100%, 60%);
+}
+
+.mel {
+border-radius: 300px;
+width: 350px;
+
+}
+
+
+/* Hero  */
+
+.intro {
+ background-image: url('stars2.jpg');
+ background-color: hsl(240, 22%, 10%);
+ background-size: cover;
+ background-position: center;
+ height: 700px;
+ 
+ margin-top: -50px;
+ display: flex;
+ justify-content: center; /* Center the content horizontally */
+ align-items: center; /* Center the content vertically */
+ flex-direction: column; /* Stack items vertically */
+
+
+ 
+}
+
+
+/* Website Portfolios */
+
+.portfolio {
+    display: inline-flex;
+    margin: 50px 15px;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack items vertically */
+    
+    
+}
+
+.portfolio h2 {
+     margin: 0px;
+     padding-bottom: 0px;
+   
+    
+    
+}
+
+.content {
+    height: 350px;
+    align-content: center;
+    margin: 100px auto;
+    size: ;
+    
+       
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+   
+    
+  }
+
+  .row img,
+  .column img {
+    width: 600px;
+    align-items: center;
+    
+     
+  }
+
+    /* Add padding between each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+/* Typography */
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Libre Baskerville';
+    font-weight: 900;
+
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+
+
+}
+
+h2.tag {
+    font-family: 'Libre Baskerville';
+    font-weight: 900;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+
+}
+
+/* About Me Section */
+
+.about-me p {
+    display: flex;
+    margin: 70px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 100px;
+    width: 80%;
+    font-size: 1.4rem;
+    opacity: 95%;
+   
+}
+
+/* Skills */
+
+.skills {
+    text-align: center;
+}
+
+.skills img {
+    width: 50px;
+    padding: 20px;
+}
+
+
+
+/* Footer Section */
+
+footer {
+    
+    display: grid;
+    background-color: hsl(240, 100%, 10%); 
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+
+/* Responsive Design */
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }

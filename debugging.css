@@ -1,0 +1,98 @@
+* {
+    color: aliceblue;
+
+    
+   }
+
+body {
+    background-color: hsl(240, 20%, 20%);
+    margin: 0 auto;
+    
+       
+   } 
+
+
+   .intro {
+    background-image: url('stars2.jpg');
+    background-color: hsl(240, 22%, 10%);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    
+    margin-top: -50px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack items vertically */
+        -webkit-animation-duration: 10s;animation-duration: 10s;
+      -webkit-animation-fill-mode: both;animation-fill-mode: both;
+   }
+   
+   @-webkit-keyframes fadeOut {
+      0% {opacity: 1;}
+      100% {opacity: 0;}
+   }
+   
+   @keyframes fadeOut {
+      0% {opacity: 1;}
+      100% {opacity: 0;}
+   }
+   
+   .fadeOut {
+      -webkit-animation-name: fadeOut;
+      animation-name: fadeOut;
+   }
+   
+    
+   }
+   
+   @keyframes fadeBackground {
+       from { background-color: hsl(240, 22%, 10%);}
+       to { background-color: #2EB07B; }
+     }
+   
+
+
+.portfolio {
+    display: inline-flex;
+    margin: 100px 15px;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack items vertically */
+    
+}
+
+.content {
+    height: 300px;
+    margin: 100px auto;
+    
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    overflow: hidden;
+    
+  }
+
+  .row img,
+  .column img {
+    width: 600px;
+    align-items: center;
+    
+    
+   
+  }
+
+    /* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

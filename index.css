@@ -30,7 +30,7 @@ body {
 }
 
 .nav li{
-   display: inline;
+   display: inline-flex;
    
    }
 
@@ -67,14 +67,13 @@ width: 350px;
 /* Hero  */
 
 .intro {
+display: flex;
  background-image: url('stars2.jpg');
  background-color: hsl(240, 22%, 10%);
  background-size: cover;
  background-position: center;
- height: 700px;
- 
+ height: 50rem;
  margin-top: -50px;
- display: flex;
  justify-content: center; /* Center the content horizontally */
  align-items: center; /* Center the content vertically */
  flex-direction: column; /* Stack items vertically */
@@ -87,7 +86,7 @@ width: 350px;
 /* Website Portfolios */
 
 .portfolio {
-    display: inline-flex;
+    display: flex;
     margin: 50px 15px;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
@@ -166,7 +165,6 @@ p {
 
 .about-me p {
     display: flex;
-    margin: 70px;
     margin: 0 auto;
     text-align: center;
     padding: 100px;
@@ -174,6 +172,7 @@ p {
     width: 80%;
     font-size: 1.4rem;
     opacity: 95%;
+    overflow: hidden;
    
 }
 
@@ -208,11 +207,53 @@ footer {
     .column {
       width: 50%;
     }
+    .about-me p {
+      width: 70%;
+      overflow: hidden;
+      margin-left: 4rem;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
+     
+      margin: 0 auto;
+      padding: 0px;
+      width: 50%;
     }
+    .portfolio {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding-left: 1rem;
+
+    }
+
+
+    .row img,
+  .column img {
+    width: 26rem;
+    overflow: hidden;
+    padding-right: 0;
+    margin-right: 0;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  
+  }
+  .row,
+  .column  {
+    width: 26rem;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  
+  }
+  .content {
+    align-content: center;
+    margin: 0 auto;
+    size: ;
   }

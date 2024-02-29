@@ -222,39 +222,18 @@ footer {
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-   //*
-    .portfolio {
-      display: block;
-      width: 100%;
-      margin: 5rem;
-      padding: 5rem;
-      align-items: center;
+    .intro {
+       background-image: none;
+       background-color: hsla(240, 22%, 10%,0.5);
+       background-blend-mode: overlay;
+       margin-top: 0 auto;
+           }
 
-    }
-
-
-    .row img,
-  .column img {
-    width: 26rem;
-    overflow: hidden;
-    padding-right: 0;
-    margin-right: 0;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  
-  }
-  .row,
-  .column  {
-    width: 26rem;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    align-content: center;
-  
-  }
-  .content {
-    align-content: center;
-    margin: 0 auto;
-    size: ;
-  } *//
+   .nav a {
+        
+            font-size: 1.8rem;
+            text-align: center;
+             padding: 0;
+            border-bottom: 2px solid #FFF5EE;
+          }
   }

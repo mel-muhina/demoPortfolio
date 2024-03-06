@@ -74,7 +74,7 @@
   background-size: cover;
   background-position: center;
   height: 50rem;
-  margin-top: -50px;
+  margin-top: -5rem;
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
   flex-direction: column; /* Stack items vertically */
@@ -250,7 +250,7 @@
              font-size: 1.5rem;
              text-align: center;
              margin: 0 auto;
-             padding: 5px 2rem;
+             padding: 5px 1rem;
              border-bottom: none;
            }
    }

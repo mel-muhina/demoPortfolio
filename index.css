@@ -68,7 +68,7 @@ width: 350px;
 
 .intro {
 display: flex;
- background-image: url('stars2.jpg');
+ background-image: url('starsbg.jpg');
  background-color: hsla(240, 22%, 10%,0.5);
  background-blend-mode: overlay;
  background-size: cover;
@@ -100,12 +100,14 @@ display: flex;
 .portfolio-item {
   width: 30%;
   padding: 6px;
+  border-radius: 1rem;
   
  }
 
 .portfolio-item img {
   width: 100%;
   border-radius: 1rem;
+  z-index: 1;
 }
 
 
@@ -149,9 +151,7 @@ h2.tag {
     padding: 0px;
 }
 
-p {
 
-}
 
 /* About Me Section */
 
@@ -190,6 +190,46 @@ footer {
     letter-spacing: 0.4px;
     text-align: center;
 }
+
+/* Animation? */
+
+/*.gif-image {
+  display: none;
+  position: absolute;
+  transition: opacity 0.5s;
+
+}*/
+
+.portfolio-item:hover #test2 {
+  display: block;
+  opacity: 1;
+  
+}
+
+/
+.portfolio-item:hover#test {
+  height: 100%;
+ 
+}
+
+.portfolio-item:hover img{
+  width: 100%;
+
+ }
+/*
+.portfolio-item:hover#test img {
+  display: none;
+  
+}
+
+.portfolio-item:hover#beaut {
+  display: block;
+  
+}
+*//
+
+
+
 
 
 /* Responsive Design */
